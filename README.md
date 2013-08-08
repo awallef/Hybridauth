@@ -19,54 +19,8 @@ $ git clone https://github.com/awallef/Hybridauth.git
 CakePlugin::load('Hybridauth', array('bootstrap' => true, 'routes' => false));
 </code></pre>
 
-3) create and setup /app/Config/hybridauth.php with:
+3) copy /app/Plugin/hybridauth/Config/hybridauth.php in your /app/Config/ folder and edit with your providers infos
 
-<pre><code>
-Configure::write('Hybridauth', array(
-    // openid providers
-    "OpenID" => array(
-        "enabled" => false
-    ),
-    "Yahoo" => array(
-        "enabled" => false,
-        "keys" => array("id" => "", "secret" => ""),
-    ),
-    "AOL" => array(
-        "enabled" => false
-    ),
-    "Google" => array(
-        "enabled" => true,
-        "keys" => array(
-            "id" => "",
-            "secret" => ""),
-    ),
-    "Facebook" => array(
-        "enabled" => false,
-        "keys" => array("id" => "", "secret" => ""),
-    ),
-    "Twitter" => array(
-        "enabled" => false,
-        "keys" => array("key" => "", "secret" => "")
-    ),
-    // windows live
-    "Live" => array(
-        "enabled" => false,
-        "keys" => array("id" => "", "secret" => "")
-    ),
-    "MySpace" => array(
-        "enabled" => false,
-        "keys" => array("key" => "", "secret" => "")
-    ),
-    "LinkedIn" => array(
-        "enabled" => false,
-        "keys" => array("key" => "", "secret" => "")
-    ),
-    "Foursquare" => array(
-        "enabled" => false,
-        "keys" => array("id" => "", "secret" => "")
-    ),
-));
-</code></pre>
 
 Usage
 ====================
