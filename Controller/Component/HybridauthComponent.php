@@ -99,8 +99,11 @@ class HybridauthComponent extends Component {
             }
 
             // well, basically your should not display this to the end user, just give him a hint and move on..
-            $this->error .= "<br /><br /><b>Original error message:</b> " . $e->getMessage();
-            $this->error .= "<hr /><pre>Trace:<br />" . $e->getTraceAsString() . "</pre>";
+            if( $this->debug_mode ){
+                $this->error .= "<br /><br /><b>Original error message:</b> " . $e->getMessage();
+                $this->error .= "<hr /><pre>Trace:<br />" . $e->getTraceAsString() . "</pre>"; 
+            }
+            
 
             return false;
         }
