@@ -79,7 +79,7 @@ http://www.your-website.com/hybridauth/endpoint
 </code></pre>
 
 
-2) It's a component with for methods acctually ;)
+2) It's a component with four methods acctually ;)
 
 <pre><code>
 // connection, pass a provider    
