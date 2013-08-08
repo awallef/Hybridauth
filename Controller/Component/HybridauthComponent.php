@@ -49,7 +49,14 @@ class HybridauthComponent extends Component {
      */
     public function logout(){
         if( !$this->hybridauth ) $this->init ();
-        $this->adapter->logout();
+        $providers = $this->hybridauth->getConnectedProviders();
+        
+        if( !empty( $providers ) ){
+            foreach( $providers as $provider ){
+                $adapter = $this->hybridauth->getAdapter($provider);
+                $adapter->logout();
+            }
+        }
     }
     
     /**
