@@ -75,7 +75,7 @@ Usage
 the retun url callback is:
 
 <pre><code>
-http://www.your-website.com/hybridauth/endpoint
+http://www.your-website.com/hybridauth/endpoint?hauth.done=Google // for exemple
 </code></pre>
 
 
